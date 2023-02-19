@@ -1,0 +1,5 @@
+repositories/BLIP
+repositories/CodeFormer
+repositories/taming-transformers
+repositories/k-diffusion (https://github.com/lshqqytiger/k-diffusion-directml)
+repositories/stable-diffusion-stability-ai (https://github.com/lshqqytiger/stablediffusion-directml)
