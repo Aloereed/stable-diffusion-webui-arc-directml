@@ -1,31 +1,31 @@
 # Stable Diffusion web UI for Intel Arc with DirectML
-Forked from [lshqqytiger/stable-diffusion-webui-directml](https://github.com/lshqqytiger/stable-diffusion-webui-directml). The code was fine-tuned only for the errors reported for the Intel Arc GPU.   [中文自述文件在这里.](README_ZH.md)
+Forked from [lshqqytiger/stable-diffusion-webui-directml](https://github.com/lshqqytiger/stable-diffusion-webui-directml). 该代码仅针对英特尔Arc GPU的报告错误进行了微调。  
 
-## Requirements
-+ An Intel Arc GPU with the latest gfx
-+ Windows 11 64 Bit
-+ A Python environment
+## 要求
++ 英特尔Arc GPU和最新的图形处理器。
++ Windows 11 64位
++ 一个Python环境
   
-If you are using an nVidia GPU, you can [go here](https://github.com/AUTOMATIC1111/stable-diffusion-webui). AMD GPU [here](https://github.com/lshqqytiger/stable-diffusion-webui-directml).  
+如果你使用的是nVidia GPU，你可以[到这里](https://github.com/AUTOMATIC1111/stable-diffusion-webui)。AMD GPU [这里](https://github.com/lshqqytiger/stable-diffusion-webui-directml)。 
 
-## Test Enviroment
+## 测试环境
 + Intel Arc A770 16G
-+ Driver: 31.0.101.4125
++ 驱动程序。31.0.101.4125
 + Windows 11 22H2
-+ Model: anything-v4.0-pruned-fp32 (running in fp16 however)
++ 模型：anything-v4.0-pruned-fp32（然而在fp16中运行）。
 
-A browser interface based on Gradio library for Stable Diffusion.
+一个基于Gradio库的浏览器界面，用于SD。
 
-![Preview](screenshot.png)  
+![预览](screenshot.png)  
 
-![Usage](usage.png)
+![用量](usage.png)
 
-## Issues
-+ You should generate images up to 512x512. 512x512 is probably a critical point even for A770 16GB. Or you can try "set COMMANDLINE_ARGS= --opt-sub-quad-attention --lowvram --disable-nan-check" in webui-user.bat, but it would be much slower. A380/A750 also should try this line.
-+ The same case to Hires.fix
+## 问题
++ 你应该生成512x512以内的图像。512x512可能是一个临界点，即使对于A770 16GB来说。或者你可以尝试在webui-user.bat中 "set COMMANDLINE_ARGS= --opt-sub-quad-attention --lowvram --disable-nan-check"，但速度会慢很多。A380/A750也应该试试这一行。
++ 同样的情况到Hires.fix
 
-## Setup
-Just run webui-user.bat. You also should refer to "Windows" section [this wiki page](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Install-and-Run-on-AMD-GPUs) if you didn't download the right repos. (Repos include BLIP, CodeFromer, k-diffusion, stable-diffusion-stability-ai,taming-transformes)  
+## 设置
+只需运行webui-user.bat。如果你没有下载正确的版本，你也应该参考 "Windows "部分在[这个wiki页面](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Install-and-Run-on-AMD-GPUs)。(Repos包括BLIP, CodeFromer, k-diffusion, stable-diffusion-stability-ai, taming-transformes)  
 
 ## Features
 [Detailed feature showcase with images](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features):
