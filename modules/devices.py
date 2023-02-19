@@ -97,11 +97,12 @@ adl = None
 hMEM = None
 try:
     dml = torch_directml.device()
-    if dml.type == "privateuseone" and "Intel" in torch_directml.device_name(dml.index):
+    if dml.type == "privateuseone" and ("Intel" in torch_directml.device_name(dml.index)):
         print("Thank you for helping to bring diversity to the graphics card market.")
     else:
         print("You seem to be using a non-Intel graphics card, WebUI is still available, but there is no guarantee that exceptions will not occur.")
 except RuntimeError as e:
+    print(str(e))
     if str(e) == 'NOT_WINDOWS':
         print("Memory optimization for DirectML is disabled. Because this is not Windows platform.")
     else:

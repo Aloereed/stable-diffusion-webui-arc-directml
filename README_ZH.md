@@ -1,6 +1,6 @@
 # Stable Diffusion web UI for Intel Arc with DirectML
 Forked from [lshqqytiger/stable-diffusion-webui-directml](https://github.com/lshqqytiger/stable-diffusion-webui-directml). 该代码仅针对英特尔Arc GPU的报告错误进行了微调。  
-
+这个资源库只是为了记录一个经过验证可以用于Intel Arc GPU的webui版本（以及非常非常小的代码调整）。要获得最新的webui功能，你可以直接查看[这里](https://github.com/lshqqytiger/stable-diffusion-webui-directml)。
 ## 要求
 + 英特尔Arc GPU和最新的图形处理驱动。
 + Windows 11 64位
@@ -23,7 +23,7 @@ Forked from [lshqqytiger/stable-diffusion-webui-directml](https://github.com/lsh
 ## 问题
 + 你应该生成512x512以内的图像。512x512可能是一个临界点，即使对于A770 16GB来说。或者你可以尝试在webui-user.bat中 "set COMMANDLINE_ARGS= --opt-sub-quad-attention --lowvram --disable-nan-check"，但速度会慢很多。A380/A750也应该试试这一行。
 + 同样的情况到Hires.fix
-
++ 如果你的电脑上有多个DirectML设备，你可能需要检查[这里](https://github.com/lshqqytiger/stable-diffusion-webui-directml)。或者修改[modules/devices.py](modules/devices.py)。
 ## 设置
 只需运行webui-user.bat。如果你没有下载正确的版本，你也应该参考 "Windows "部分在[这个wiki页面](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Install-and-Run-on-AMD-GPUs)。(Repos包括BLIP, CodeFromer, k-diffusion, stable-diffusion-stability-ai, taming-transformes)  
 
