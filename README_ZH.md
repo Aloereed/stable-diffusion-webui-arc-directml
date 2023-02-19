@@ -2,7 +2,7 @@
 Forked from [lshqqytiger/stable-diffusion-webui-directml](https://github.com/lshqqytiger/stable-diffusion-webui-directml). 该代码仅针对英特尔Arc GPU的报告错误进行了微调。  
 
 ## 要求
-+ 英特尔Arc GPU和最新的图形处理器。
++ 英特尔Arc GPU和最新的图形处理驱动。
 + Windows 11 64位
 + 一个Python环境
   
