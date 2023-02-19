@@ -1,0 +1,6 @@
+[submodule "repositories/stable-diffusion-stability-ai"]
+	path = repositories/stable-diffusion-stability-ai
+	url = https://github.com/lshqqytiger/stablediffusion-directml
+[submodule "repositories/k-diffusion"]
+	path = repositories/k-diffusion
+	url = https://github.com/lshqqytiger/k-diffusion-directml
