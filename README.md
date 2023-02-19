@@ -1,9 +1,31 @@
 # Stable Diffusion web UI for Intel Arc with DirectML
-Forked from [lshqqytiger/stable-diffusion-webui-directml](https://github.com/lshqqytiger/stable-diffusion-webui-directml)  
+Forked from [lshqqytiger/stable-diffusion-webui-directml](https://github.com/lshqqytiger/stable-diffusion-webui-directml). The code was fine-tuned only for the errors reported for the Intel Arc GPU.   
+
+## Requirements
++ An Intel Arc GPU with the latest gfx
++ Windows 11 64 Bit
++ A Python environment
+  
+If you are using an nVidia GPU, you can [go here](https://github.com/AUTOMATIC1111/stable-diffusion-webui). AMD GPU [here](https://github.com/lshqqytiger/stable-diffusion-webui-directml).  
+
+## Test Enviroment
++ Intel Arc A770 16G
++ Driver: 31.0.101.4125
++ Windows 11 22H2
++ Model: anything-v4.0-pruned-fp32 (running in fp16 however)
 
 A browser interface based on Gradio library for Stable Diffusion.
 
-![](screenshot.png)
+![Preview](screenshot.png)  
+
+![Usage](usage.png)
+
+## Issues
++ You should generate images up to 512x512. 512x512 is probably a critical point even for A770 16GB. Or you can try "set COMMANDLINE_ARGS= --opt-sub-quad-attention --lowvram --disable-nan-check" in webui-user.bat, but it would be much slower. A380/A750 also should try this line.
++ The same case to Hires.fix
+
+## Setup
+Just run webui-user.bat. You also should refer to "Windows" section [this wiki page](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Install-and-Run-on-AMD-GPUs) if you didn't download the right repos. (Repos include BLIP, CodeFromer, k-diffusion, stable-diffusion-stability-ai,taming-transformes)  
 
 ## Features
 [Detailed feature showcase with images](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features):
