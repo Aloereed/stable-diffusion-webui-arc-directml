@@ -32,7 +32,8 @@ notification.mp3
 /test/stdout.txt
 /test/stderr.txt
 /cache.json
-repositories2/*
-repositories2/*/*
-repositories/*
-repositories/*/*
+repositories/BLIP
+repositories/CodeFormer
+repositories/taming-transformers
+repositories/k-diffusion/*
+repositories/stable-diffusion-stability-ai/*
