@@ -1,6 +1,6 @@
 # Stable Diffusion web UI for Intel Arc with DirectML
 Forked from [lshqqytiger/stable-diffusion-webui-directml](https://github.com/lshqqytiger/stable-diffusion-webui-directml). 该代码仅针对英特尔Arc GPU的报告错误进行了微调。  
-**关于在Linux中使用IPEX（Intel Extensions for Pytorch）的SD，见这里。[Aloereed/stable-diffusion-webui-ipex-arc] (https://github.com/Aloereed/stable-diffusion-webui-ipex-arc) 。这种方法使用较少的显存，生成较大的图像，并减少英特尔显卡在处理过程中的啸叫。  **
+**关于在Linux中使用IPEX（Intel Extensions for Pytorch）的SD，见这里。[Aloereed/stable-diffusion-webui-ipex-arc](https://github.com/Aloereed/stable-diffusion-webui-ipex-arc) 。这种方法使用较少的显存，生成较大的图像，并减少英特尔显卡在处理过程中的啸叫。  **
 
 这个资源库只是为了记录一个经过验证可以用于Intel Arc GPU的webui版本（以及非常非常小的代码调整）。要获得最新的webui功能，你可以直接查看[这里](https://github.com/lshqqytiger/stable-diffusion-webui-directml)。
 ## 要求
