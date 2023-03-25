@@ -27,7 +27,7 @@ Forked from [lshqqytiger/stable-diffusion-webui-directml](https://github.com/lsh
 + 同样的情况到Hires.fix
 + 如果你的电脑上有多个DirectML设备，你可能需要检查[这里](https://github.com/lshqqytiger/stable-diffusion-webui-directml)。或者修改[modules/devices.py](modules/devices.py)。
 ## 设置
-只需运行webui-user.bat。如果你没有下载正确的版本，你也应该参考 "Windows "部分在[这个wiki页面](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Install-and-Run-on-AMD-GPUs)。(Repos包括BLIP, CodeFromer, k-diffusion, stable-diffusion-stability-ai, taming-transformes)  
+只需运行webui-user.bat。请确保以下仓库被下载。(包括 BLIP, CodeFromer, [k-diffusion](https://github.com/lshqqytiger/k-diffusion-directml/tree/891466a373cef42ce7ac3dd840dbba6d832b024b), [stable-diffusion-stability-ai](https://github.com/lshqqytiger/stablediffusion-directml/tree/890e30734bece57c05ed6849c9453359c3511844),taming-transformes)  
 
 ## Features
 [Detailed feature showcase with images](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features):
