@@ -29,7 +29,7 @@ A browser interface based on Gradio library for Stable Diffusion.
 + The same case to Hires.fix
 + If you have multiple DirectML devices on your computer, you may need to check [here](https://github.com/lshqqytiger/stable-diffusion-webui-directml). Or modify [modules/devices.py](modules/devices.py).
 ## Setup
-Just run webui-user.bat. You also should refer to "Windows" section [this wiki page](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Install-and-Run-on-AMD-GPUs) if you didn't download the right repos. (Repos include BLIP, CodeFromer, k-diffusion, stable-diffusion-stability-ai,taming-transformes)  
+Just run webui-user.bat. You should also download some repositories first. (Repos include BLIP, CodeFromer, [k-diffusion](https://github.com/lshqqytiger/k-diffusion-directml/tree/891466a373cef42ce7ac3dd840dbba6d832b024b), [stable-diffusion-stability-ai](https://github.com/lshqqytiger/stablediffusion-directml/tree/890e30734bece57c05ed6849c9453359c3511844),taming-transformes)  
 
 ## Features
 [Detailed feature showcase with images](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features):
